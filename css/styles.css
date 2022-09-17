@@ -4,26 +4,28 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
 }
 h1 {
-  font-size: 6.52rem;
-  font-family: 'Sacramento', cursive;
-  margin: 50px auto 0 auto;
+  font-size: 7.5rem;
+  font-family: 'Sue Ellen Francisco', cursive;
   color: #554994;
+  margin: 50px auto 0 auto
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #554994;
   font-weight: normal;
 }
 h3 {
-  color: #3AB4F2;
+  color: #76549A;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
 }
 a {
   color: #3AB4F2;
 }
 p {
   line-height: 2;
+  font-size: 1.3rem;
 }
 hr {
   border: dotted;
@@ -31,80 +33,68 @@ hr {
   width: 4%;
   margin: 100px auto;
 }
-.top-container {
-  padding-top: 100px;
-  background: #A084CA;
-  }
-
-.top-cloud {
+.birds {
+  width: 25rem;
   position: relative;
-  left: 300px;
+  left: 60rem;
+  float: left;
 }
-
-
+.birds:hover {
+  animation-name: example;
+  animation-duration: 2s;
+}
+@keyframes example {
+  0%   {left: 59rem;}
+  25%  {left: 58rem;}
+  50%  {left: 57rem;}
+  100% {left: 55rem;}
+}
+.bottom-container {
+  background-color: #A084CA;
+  padding-top: 50px;
+}
 .bottom-cloud {
   position: absolute;
   left: 175px;
-}
-.contact-me {
-  width: 40%;
-  margin: auto;
-  padding-bottom: 100px;
-}
-
-.halfround {
-  width: 35%;
-  height: 35%;
-}
-.intro {
-  width: 51%;
-  margin: auto;
-}
-.profile {
-  line-height: 2;
-  padding-bottom: 50px;
-}
-.profile img{
-  padding-top: 50px;
-  width: 10%;
-}
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-  padding-bottom: 100px;
-
-}
-.programming {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-}
-.data-analysis {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
 }
 .btn {
   -webkit-border-radius: 8;
   -moz-border-radius: 8;
   border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-size: 20px;
-  background: #6c56c4;
+  background: black;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 
 }
-
 .btn:hover {
-  background: #4503a8;
+  opacity: 0.3;
   text-decoration: none;
 }
-.bottom-container {
-  background-color: #A084CA;
-  padding-top: 50px;
+
+.contact-me {
+  padding-top: 5rem;
+  width: 50rem;
+  margin: auto;
+  padding-bottom: 100px;
+}
+.contact-me p{
+
+  width: 50rem;
+  padding-bottom: 3rem;
+  text-align: justify;
+  margin: auto;
+}
+.copyright {
+  color: #6c56c4;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.data-analysis {
+  width: 15rem;
+  float: right;
+  margin-left: 30px;
 }
 .footer-link {
   color : #FFEA11;
@@ -113,10 +103,105 @@ hr {
   margin-right: 20px;
 }
 .footer-link:hover {
-  color: #3AB4F2;
+  opacity: 0.3;
 }
-.copyright {
-  color: #6c56c4;
-  font-size: 0.75rem;
-  padding: 20px 0;
+.half-circle {
+  width: 40rem;
+  height: 20rem;
+  margin: auto;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  background: yellow;
+  border-bottom: 0;
+  -webkit-box-shadow: 0px 0px 8px 5px black;
+  -moz-box-shadow: 0px 0px 8px 2px light green;
+  box-shadow: 0px 0px 8px 2px #F9F9F9;
+}
+.half-circle:hover {
+  border: 2rem;
+  -webkit-box-shadow: 0px 0px 8px 5px black;
+  -moz-box-shadow: 0px 0px 8px 2px light green;
+  box-shadow: 0px 0px 20px 5px yellow;
+}
+#header {
+  width: 100rem;
+  height: 0rem;
+  padding-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all .3s ease;
+}
+.header li {
+    background-color: #A084CA;
+    border-bottom-right-radius: 25%;
+    padding : 0px 10px 10px 10px;
+    display: block;
+    float: left;
+    -webkit-box-shadow: 0px 0px 8px 5px black;
+    -moz-box-shadow: 0px 0px 8px 2px #554994;
+    box-shadow: 0px 0px 2px 2px #B1B2FF;
+}
+.header li:first-child a {
+    margin-left: 0;
+}
+.header li a.active {
+    color: yellow;
+}
+.header li a {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 1rem 0.5rem 0 0.5rem;
+}
+.active:hover {
+    opacity: 0.3;
+}
+.index:hover {
+  opacity: 0.3;
+}
+.work:hover {
+  opacity: 0.3;
+}
+.contact:hover {
+  opacity: 0.3;
+}
+.intro {
+  width: 60rem;
+  margin: auto;
+  text-align: justify;
+}
+.profile {
+  line-height: 2;
+  padding-bottom: 50px;
+}
+.profile img{
+  padding-top: 50px;
+  width: 10rem;
+}
+.programmer {
+  padding-bottom: 3rem;
+}
+.programming {
+  width: 15rem;
+  float: left;
+  margin-right: 30px;
+}
+.skill-row {
+  width: 60rem;
+  margin: 100px auto 100px auto;
+  text-align: justify;
+  padding-bottom: 100px;
+
+}
+
+.top-container {
+  padding-top: 100px;
+  background: #A084CA;
+  }
+
+.top-cloud {
+  position: relative;
+  left: 300px;
 }
