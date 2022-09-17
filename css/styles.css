@@ -36,7 +36,7 @@ hr {
 .birds {
   width: 25rem;
   position: relative;
-  left: 60rem;
+  left:60%;
   float: left;
 }
 .birds:hover {
@@ -44,10 +44,10 @@ hr {
   animation-duration: 2s;
 }
 @keyframes example {
-  0%   {left: 59rem;}
-  25%  {left: 58rem;}
-  50%  {left: 57rem;}
-  100% {left: 55rem;}
+  0%   {left: 60%;}
+  25%  {left: 55%;}
+  50%  {left: 50%;}
+  100% {left: 45%;}
 }
 .bottom-container {
   background-color: #A084CA;
